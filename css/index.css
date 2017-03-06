@@ -1,0 +1,90 @@
+*{
+    /*清除浏览器默认样式*/
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.musicBox{
+    height: 600px;
+    width: 600px;
+    background: url("../img/tune.png") no-repeat center;
+    /*内部内容居中弹性盒子布局*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.musicPanel{
+    height: 560px;
+    width: 560px;
+    background: url("../img/star-tail.png") no-repeat center,url("../img/round.png") no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*动画*/
+    animation: rotating 3s infinite linear;
+
+}
+
+.musicDisc{
+    height: 200px;
+    width: 200px;
+    background: url("../img/disc2.JPG") no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/*按钮 文字 like star*/
+.musicInfo{
+    position: absolute;
+    width: 560px;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.musicName p{
+    color: #ffffff;
+}
+
+.musicShare{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;;
+    align-items: center;
+}
+
+/*转动的动画*/
+@keyframes rotating {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.stopAniamtion{
+    animation-play-state: paused;
+}

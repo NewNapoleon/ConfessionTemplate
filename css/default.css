@@ -1,0 +1,49 @@
+#mainDiv {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    height: 500px;
+}
+
+#content{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#code {
+    float: left;
+    text-align: left;
+    width: 440px;
+    height: 400px;
+    color: #000;
+    font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+    font-size: 12px
+}
+
+#code .string {
+    color: #2a36ff
+}
+
+#code .keyword {
+    color: #7f0055;
+    font-weight: bold
+}
+
+#code .placeholder {
+    margin-left: 15px
+}
+
+#code .space {
+    margin-left: 7px
+}
+
+#code .comments {
+    color: #3f7f5f
+}
+
+#code #name
+{
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 50px;
+    color:#000;
+}
